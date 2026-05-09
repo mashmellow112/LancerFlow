@@ -1,0 +1,46 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 0. Global Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Helpers ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // --- Waitlist Entry Validation ---
+    function isValidWaitlistEntry(data) {
+      return data.keys().hasAll(['email', 'createdAt']) 
+        && data.keys().size() >= 2 
+        && data.keys().size() <= 3 // email, createdAt, and optional name
+        && data.email is string 
+        && data.email.size() > 5 
+        && data.email.size() <= 256
+        && data.email.matches('^[^@]+@[^@]+\\.[^@]+$') // Basic email regex
+        && data.createdAt == request.time
+        && (!data.keys().hasAny(['name']) || (data.name is string && data.name.size() <= 128));
+    }
+
+    // --- Waitlist Collection ---
+    match /waitlist/{entryId} {
+      allow get: if false; 
+      allow list: if false;
+      
+      allow create: if isValidId(entryId) 
+        && isValidWaitlistEntry(incoming());
+      
+      allow update, delete: if false;
+    }
+  }
+}
