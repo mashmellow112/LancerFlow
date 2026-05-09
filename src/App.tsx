@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { db, handleFirestoreError, OperationType, serverTimestamp, testConnection } from './lib/firebase';
 import { collection, addDoc } from 'firebase/firestore';
+import founderImg from './assets/images/regenerated_image_1778348172002.jpg';
 
 // --- Components ---
 
@@ -283,7 +284,7 @@ export default function App() {
               </p>
               <div className="pt-8">
                 <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 mb-4 mx-auto overflow-hidden">
-                   <img src="/src/assets/images/regenerated_image_1778348172002.jpg" alt="Founder" />
+                   <img src={founderImg} alt="Founder" />
                 </div>
                 <div className="text-sm font-bold tracking-tighter uppercase">SAMANYA IMMANUEL</div>
                 <div className="text-[10px] text-white/30 uppercase tracking-[0.2em] mt-1">Founder, LancerFlow</div>
