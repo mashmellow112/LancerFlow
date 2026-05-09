@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# LancerFlow Waitlist
 
-# Run and deploy your AI Studio app
+LancerFlow is the all-in-one dashboard built for independent creators to manage clients, track projects, and get paid faster. This pre-sell page serves as a high-converting waitlist to validate market interest and build an early user base.
 
-This contains everything you need to run your app locally.
+## 🎯 Purpose
+The LancerFlow Waitlist page is designed to highlight the core value proposition of the LancerFlow platform:
+- **Client Management**: Stop losing track of your freelance relationships.
+- **Invoice Tracking**: Get real-time visibility into paid and pending invoices.
+- **Professionalism**: Send sleek, automated invoices that get you paid faster.
 
-View your app in AI Studio: https://ai.studio/apps/89fa79c9-fc3d-44be-8695-e3e7192358bc
+## 🛠️ Tech Stack
+- **Frontend**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Motion](https://motion.dev/) (formerly Framer Motion)
+- **Backend/Database**: [Firebase Firestore](https://firebase.google.com/docs/firestore)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-## Run Locally
+## ✨ Key Features
+- **Sophisticated Dark UI**: A professional, premium aesthetic designed for modern creators.
+- **Interactive Dashboard Preview**: A 3D-angled preview of the upcoming LancerFlow dashboard.
+- **Secure Waitlist Signup**: Real-time validation and submission directly to Firestore.
+- **Mobile Responsive**: Fully optimized for every device.
 
-**Prerequisites:**  Node.js
+## 🛡️ Security
+This project uses hardened **Firebase Security Rules** to ensure:
+- Users can only *create* waitlist entries.
+- Waitlist entries cannot be modified or deleted once submitted.
+- Sensitive data is protected from unauthorized access or bulk scraping.
 
+## 👤 Credits
+**Founder**: Samanya Immanuel
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+*Created with Google AI Studio Build.*
