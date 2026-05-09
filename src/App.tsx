@@ -23,10 +23,11 @@ import { collection, addDoc } from 'firebase/firestore';
 
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-12 py-8 bg-[#050505]/80 backdrop-blur-md">
-    <div className="flex items-center gap-3">
-      <Rocket className="w-8 h-8 text-white fill-white/10" />
+    <div className="flex items-center gap-2">
+      <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
+        <div className="w-4 h-4 border-2 border-black rotate-45"></div>
+      </div>
       <span className="text-xl font-bold tracking-tighter text-[#F5F5F5]">LANCERFLOW</span>
-      <Rocket className="w-6 h-6 text-white/20 -rotate-90" />
     </div>
     <div className="px-4 py-1 rounded-full border border-white/20 text-[10px] uppercase tracking-widest text-white/60">
       Available Fall 2024
