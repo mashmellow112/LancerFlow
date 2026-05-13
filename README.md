@@ -1,34 +1,75 @@
-# LancerFlow Waitlist
+# 🚀 LancerFlow
 
-LancerFlow is the all-in-one dashboard built for independent creators to manage clients, track projects, and get paid faster. This pre-sell page serves as a high-converting waitlist to validate market interest and build an early user base.
+### **The All-in-One Dashboard for Modern Independent Creators.**
 
-## 🎯 Purpose
-The LancerFlow Waitlist page is designed to highlight the core value proposition of the LancerFlow platform:
-- **Client Management**: Stop losing track of your freelance relationships.
-- **Invoice Tracking**: Get real-time visibility into paid and pending invoices.
-- **Professionalism**: Send sleek, automated invoices that get you paid faster.
-
-## 🛠️ Tech Stack
-- **Frontend**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Animations**: [Motion](https://motion.dev/) (formerly Framer Motion)
-- **Backend/Database**: [Firebase Firestore](https://firebase.google.com/docs/firestore)
-- **Icons**: [Lucide React](https://lucide.dev/)
-
-## ✨ Key Features
-- **Sophisticated Dark UI**: A professional, premium aesthetic designed for modern creators.
-- **Interactive Dashboard Preview**: A 3D-angled preview of the upcoming LancerFlow dashboard.
-- **Secure Waitlist Signup**: Real-time validation and submission directly to Firestore.
-- **Mobile Responsive**: Fully optimized for every device.
-
-## 🛡️ Security
-This project uses hardened **Firebase Security Rules** to ensure:
-- Users can only *create* waitlist entries.
-- Waitlist entries cannot be modified or deleted once submitted.
-- Sensitive data is protected from unauthorized access or bulk scraping.
-
-## 👤 Credits
-**Founder**: Samanya Immanuel
+LancerFlow is a premium, high-performance platform designed specifically for freelancers, consultants, and creative professionals. It streamlines client management, automates invoicing, and provides real-time financial visibility so you can spend less time on admin and more time on your craft.
 
 ---
-*Created with Google AI Studio Build.*
+
+## 🛠️ Tech Stack
+
+Built with a modern, scalable, and lightning-fast architecture:
+
+*   **Frontend**: [React](https://react.dev/) + [Vite](https://vitejs.dev/) (Next-gen bundling for peak performance)
+*   **Styling**: [Tailwind CSS](https://tailwindcss.com/) (For a responsive, pixel-perfect UI)
+*   **Animations**: [Motion](https://motion.dev/) (For fluid transitions and a premium aesthetic)
+*   **Backend & Database**: [Firebase](https://firebase.google.com/) (Real-time data and enterprise-grade security)
+*   **Icons**: [Lucide React](https://lucide.dev/) (Clean, minimalist iconography)
+
+---
+
+## ✨ Key Features
+
+-   **🎯 High-Converting Waitlist**: A sophisticated pre-sell page designed to build authority and collect early leads.
+-   **📈 Dashboard Preview**: An interactive, 3D-perspective look at the upcoming LancerFlow management suite.
+-   **🔒 Enterprise-Grade Security**: Hardened Firebase Security Rules ensuring zero-trust data protection.
+-   **📱 Fully Responsive**: Seamless experience across mobile, tablet, and desktop devices.
+-   **⚡ Performance First**: Optimized for speed with efficient assets and clean code structure.
+
+---
+
+## 🖼️ Screenshots
+
+<div align="center">
+  <img src="./src/assets/images/lancerflow_desktop.jpg" alt="LancerFlow Desktop Hero" width="800px" />
+  <br />
+  <img src="./src/assets/images/lancerflow_mobile.jpg" alt="LancerFlow Mobile Hero" width="300px" />
+</div>
+
+---
+
+## 🚀 Getting Started
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/lancerflow.git
+    ```
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Set up environment variables**:
+    Create a `.env` file based on `.env.example` and add your Firebase credentials.
+4.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## 🛡️ Security & Privacy
+
+We take data integrity seriously. LancerFlow implements a **Zero-Trust** security model using Firebase's tiered access logic:
+*   **Identity Integrity**: Users can only interact with their own waitlist submissions.
+-   **Write Guards**: Strict validation helpers prevent malicious data injection.
+-   **PII Protection**: Sensitive information is isolated and protected via server-side rules.
+
+---
+
+## 👤 Credits & Vision
+
+**LancerFlow** was founded by **Samanya Immanuel** with the mission of empowering the global independent creator economy.
+
+---
+
+*Built with ❤️ using Google AI Studio Build.*
